@@ -1,0 +1,6 @@
+<% # this view is iterating over @articles (which is an instance variable storing Article.all) and rendering the articles on the page %>
+
+<% @articles.each do |article| %>
+    <h1><%= article.title %></h1>
+    <p><%= article.content %></p>
+<% end %>
